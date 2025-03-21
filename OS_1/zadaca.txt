@@ -1,0 +1,29 @@
+Zadatak1
+pwd
+ls
+mkdir vjezba1 && cd vjezba1
+touch README.md
+cd ..
+
+Zadatak2
+mkdir vjezba2 && touch vjezba2/file.txt
+cp vjezba2/file.txt vjezba2/file_copy.txt
+ls vjezba2
+rm vjezba2/file.txt && cd ..
+rmdir vjezba2
+rmdir brise samo prazne direktorije, pa se ovaj ne moze izbrisati
+
+Zadatak3
+mkdir vjezba3 && cd vjezba3 && mkdir backup
+tocuh vjezba3/notes.txt && touch vjezba3/todo.txt && touch vjezba3/script.sh
+cp vjezba3/* vjezba3/backup/
+rm vjezba3/script.sh && ls vjezba3
+mkdir vjezba3/backup/$USER
+mv vjezba3/backup/* vjezba3/backup/$USER/
+
+Zadatak4
+mkdir vjezba4 && mkdir vjezba4/subfolder
+touch vjezba4/$HOSTNAME
+mv vjezba4/$HOSTNAME vjezba4/#USER
+mv vjezba4/$USER vjezba4/subfolder/
+rm Users/User/vjezba4/subfolder/$USER
