@@ -1,0 +1,31 @@
+Zadatak 1
+mkdir -p vjezba_2/data vjezba_2/backup
+cd vjezba_2/data
+touch script.js style.css .env
+echo 'console.log("Hello, World!")' > script.js
+echo 'body { background-color: #f0f0f0; }' > style.css
+echo 'VJEZBE=OS' > .env
+
+
+Zadatak 2
+cd ..
+cp -r data/.* data/* backup/
+cd data
+ls -lS ../backup
+
+
+Zadatak 3
+rm script.js style.css
+cd ..
+cp -n backup/* data/
+ls -lA data
+
+
+Zadatak 4
+mkdir novi_direktorij
+cd novi_direktorij
+mkdir folder1 folder2
+touch folder1/file1.txt folder1/file2.txt folder2/file_1.txt
+ls -laS
+ls -lSh
+ls -lRt
